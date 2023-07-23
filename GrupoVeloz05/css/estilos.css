@@ -1,0 +1,110 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+  --fondo-color: #172742;
+  --azul-firts: #1760E5;
+  --blanco: #fff;
+  --fondo-login: #699bf7;
+  --negro: #000;
+  --gris-login: #292C33;
+  --verde-promo: #0FFF27;
+  --azul-dias: #0897B7;
+  --verde-horas: #45DD2C;
+}
+
+/* Usuario */
+
+#fondo_login {
+    background: linear-gradient(180deg, #0792B6 0%, #09109C 100%);
+    height: 100vh;
+}
+
+.formulario {
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid #000;
+    background: #292C33;
+    box-shadow: 0px -10px 4px 2px rgba(0, 0, 0, 0.35);
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+}
+
+.titulo_sesion {
+    color: var(--blanco);
+    text-align: center;
+    font-family: roboto;
+}
+
+.formulariouser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-user {
+    padding: 20px;
+}
+
+.usuario {
+    background: #292C33;
+    border: 0;
+    border-bottom: solid 3px var(--blanco);
+    margin: 20px;
+    width: 380px;
+}
+
+.usuario::placeholder {
+    position: relative;
+    left: 15px;
+}
+
+.btn-login {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.btn-entrar {
+    border: 1px solid #000;
+    background: #699BF7;
+    height: 50px;
+    font-weight: bold;
+    padding: 10px;
+    width: 115px;
+}
+
+.recovery {
+    padding: 20px;
+    text-align: center;
+}
+
+.recovery a {
+    color: var(--blanco);
+}
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+figcaption {
+    color: var(--blanco);
+    padding: 10px;
+}
+
+.footer_login {
+    color: var(--blanco);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+/* Final de usuario */
+
+@media screen and (max-width: 500px) {
+    .formulario {
+        
+        width: 100%;
+    }
+}
