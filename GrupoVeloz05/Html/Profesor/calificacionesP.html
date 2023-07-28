@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es" style="min-width: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones Profesor</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+<body id="fondo_body">
+<!-- Logo del colegio -->
+<div class="logo">
+    <div class="logo">
+        <figure class="icono_houston">
+         <img src="/img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
+         <figcaption>Colegio de San Houston</figcaption>
+       </figure>
+       </div>
+</div>
+
+<!-- rol de Administrador -->
+<div class="header_administrador">
+    <img src="/img/Porfesor_img.png" alt="imagen de Profesor">
+    <h2>Profesor</h2>
+</div>
+
+<div class="calificaciones">
+    <h1>Calificaciones</h1> 
+    <a href="profesor_inicio.html"><img src="" alt="atras"></a>
+</div>
+    
+  <div class="selectores">
+    <select name="cursos" class="selector curso">
+        <option value="0">Cursos</option>
+        <option value="1">Primero</option>
+        <option value="">Segundo</option>
+        <option value="">Tercero</option>
+        <option value="">cuarto</option>
+        <option value="">Quinto</option>
+        <option value="">Sexto</option>
+        <option value="">Septimo</option>
+    </select>
+    <select name="estudiantes" class="estudiante" disabled>
+         <option value="0">Estudiantes</option>
+         <option value="fatima">Fatima Rodrigo</option>
+         <option value="nestor">Nestor Luna</option>
+         <option value="Ikram ">Ikram Miguel</option>
+         <option value="ff">Irune Jiménez</option>
+         <option value="ff">Oliver Vilchez</option>
+         <option value="ff">Amador Barba</option>
+         <option value="ff">Estrella Narvaez</option>
+        
+    </select> <!--El atributo disabled nos permite desactivar el control o sea digase inputs, selects etc. por defecto tiene el valor de disabled o true, recoge valores booleanos--> <!--Este campo estara desactivado hasta que se elija un curso -->
+    
+  </div> 
+   <div id="materia"> Lengua española</div><!--Aqui se pondra la materia a la cual se calificara es un contenedor dinamico, si el profesor elige otra materia se pondra con js-->
+  <div class="tablas">
+    <table border="1">
+        <thead>
+            <th>Primer Cuatrimestre</th>
+            <th>Calificaciones</th>
+        </thead>
+        <tbody>
+             <tr>
+                <td>Enero</td>
+                <td><input type="number" name="" id="" disabled value="70"></td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td><input type="number" name="" id="" disabled value="70"></td>
+            </tr>
+            <tr>
+                <td>Marzo</td>
+                <td><input type="number" name="" id=""  value="70" disabled></td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td><input type="number" name="" id="" disabled value="70"></td>
+            </tr>
+            <tr>
+                <td>Mayo</td>
+                <td><input type="number" name="" id="" disabled value="70"></td>
+            </tr>
+            <tr>
+                <td>junio</td>
+                <td><input type="number" name="" id="" disabled  value="70"></td>
+            </tr>
+           
+        </tbody>
+    </table>
+    <table border="1">
+        <thead>
+            <th>Segundo Cuatrimestre</th>
+            <th>Calificaciones</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Julio</td>
+                <td><input type="number"  id="Enero" disabled value="70"></td>
+            </tr>
+            <tr>
+                <td>Agosto</td>
+                <td><input type="number"  id="Febrero" disabled value="70"></td>
+            </tr>
+            <tr>
+                <td>Septiembre</td>
+                <td><input type="number"  id="Marzo"  value="70" disabled></td>
+            </tr>
+            <tr>
+                <td>Octubre</td>
+                <td><input type="number"  id="Abril" disabled value="70"></td>
+            </tr>
+            <tr>
+                <td>Noviembre</td>
+                <td><input type="number"  id="Mayo" disabled value="70"></td>
+            </tr>
+            <tr>
+                <td >Diciembre</td>
+                <td><input type="number"  id="" disabled  value="70"> 
+            </tr>
+        </tbody>
+    </table>
+
+  </div>
+  <div class="botones">
+    <button>Guardar</button>
+    <button>Cancelar</button>
+  </div>
+</body>
+</html>

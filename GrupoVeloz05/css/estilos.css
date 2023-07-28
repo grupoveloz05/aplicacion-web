@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+  --fondo-color: #172742;
+  --azul-firts: #1760E5;
+  --blanco: #fff;
+  --fondo-login: #699bf7;
+  --negro: #000;
+  --gris-login: #292C33;
+  --verde-promo: #0FFF27;
+  --azul-dias: #0897B7;
+  --verde-horas: #45DD2C;
+}
+
+.rol a{
+    color: var(--blanco);
+}
+
+/* Usuario */
+
+#fondo_login {
+    background: linear-gradient(180deg, #0792B6 0%, #09109C 100%);
+    height: 100vh;
+}
+
+.formulario {
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid #000;
+    background: #292C33;
+    box-shadow: 0px -10px 4px 2px rgba(0, 0, 0, 0.35);
+    margin: 0 auto;
+    position: relative;
+    top: 2.5em;
+    height: 27em;
+    width: 27em;
+}
+
+.titulo_sesion {
+    color: var(--blanco);
+    text-align: center;
+    font-family: roboto;
+    font-size: 1.5em;
+    position: relative;
+    top: 1.5em;
+}
+
+.formulariouser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-user {
+    padding: 20px;
+}
+
+.usuario {
+    background: #292C33;
+    border: 0;
+    border-bottom: solid 3px var(--blanco);
+    color: var(--blanco);
+    padding: 5px;
+    margin: 20px;
+    width: 380px;
+}
+
+.usuario::placeholder {
+    position: relative;
+    left: 15px;
+}
+
+.btn-login {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.btn-entrar {
+    border: 1px solid #000;
+    background: #699BF7;
+    height: 50px;
+    font-weight: bold;
+    padding: 10px;
+    width: 115px;
+}
+
+.recovery {
+    padding: 20px;
+    text-align: center;
+}
+
+.recovery a {
+    color: var(--blanco);
+}
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+figcaption {
+    color: var(--blanco);
+    padding: 10px;
+    font-size: 1.7em;
+}
+
+.iconos {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-user {
+    height: 45px;
+    width: 45px;
+}
+
+footer {
+    color: var(--blanco);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 3.5em;
+}
+
+/* Final de usuario */
+
+/* Pantalla principal de administrador */
+
+#fondo_body {
+    background-color: #172742;
+}
+
+.menu_admin {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.items_admin {
+    align-items: center;
+    border-radius: 30px;
+    border: solid 2px var(--blanco);
+    background: #1760E5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    /* display: grid; */
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.6s;
+    overflow: hidden;
+    margin: 10px;
+    gap: 10px;
+    flex-shrink: 0;
+    width: 236px;
+}
+
+.items_admin p {
+    color: var(--blanco);
+    font-size: 1.3em;
+    text-shadow: 3px 3px 3px #292C33;
+}
+
+.items_admin:hover {
+    background-color: #0792B6;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.items_admin h2 a {
+    color: var(--blanco);
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #292C33;
+}
+
+.items_admin ul li {
+    align-items: center;
+    color: var(--blanco);
+    display: inline;
+    font-size: 1.5em;
+    transition: 0.3s;
+    text-align: center;
+    text-shadow: 1px 1px 1px #292C33;
+    position: relative;
+    right: 16px;
+}
+
+.items_admin ul li:hover {
+    color: #000;
+}
+
+.imagen_admin  {
+    bottom: 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+.imagen_admin img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.header_administrador {
+    bottom: 110px;
+    display: grid;
+    justify-items: end;
+    position: relative;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.header_administrador img {
+    width: 85px;
+    height: 85px;
+}
+
+.header_administrador h2 {
+    color: var(--blanco);
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Gestion de usuarios */
+
+.titulo_usuario {
+    color: var(--blanco);
+    text-align: center;
+}
+
+/* Final de administrador */
+
+/* Estudiante */
+
+.direc_curs {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0A0E20;
+    flex-shrink: 0;
+    height: 46px;
+    width: 360px;
+}
+
+.direc_curs label {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 27.344px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.direc_curs input {
+    background-color: #0897B7;
+    border: solid 1px var(--blanco);
+    color: #fff;
+    text-align: center;
+    text-shadow: 0.7px 1px 1px #292C33;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    line-height: normal;
+}
+
+/* Final de estudiante */
+
+/* Media query del login */
+
+@media screen and (max-width: 560px) {
+    .formulario {
+        width: 100%;
+    }
+
+    figure {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    figure img {
+        height: 200px;
+        width: 170px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    /* Media query de los items */
+
+    .items_admin {
+        text-align: center;
+        width: 200px;
+        height: 80px;
+    }
+
+    .items_admin:hover {
+        background-color: #0792B6;
+    }
+
+    .items_admin ul li {
+        visibility: hidden;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+
+    .icono_houston {
+        position: relative;
+        right: 152px;
+    }
+
+    .icono_houston figcaption {
+        font-size: 16px;
+    }
+
+    .icono_houston img { 
+        width: 75px;
+        height: 80px;
+    }
+
+    .header_administrador {
+        position: relative;
+        bottom: 146px;
+        left: 18px;
+    }
+
+    .items_admin p {
+        visibility: hidden;
+    }
+
+}
