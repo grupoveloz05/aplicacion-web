@@ -4,38 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modificar Estudiante (Admin)</title>
+    <title>Modificar estudiante (Admin)</title>
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
-<body>
+<body id="fondo_body">
+
+    <!-- Logo del colegio -->
+    <div class="logo">
+        <div class="logo">
+            <figure class="icono_houston">
+             <img src="/img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
+             <figcaption>Colegio de San Houston</figcaption>
+           </figure>
+           </div>
+    </div>
+
+    <!-- Titulo de Formulario Estudiante -->
+    <header class="titulo_profesor_admin">
+        <h1>Modificar Estudiante</h1>
+        <img src="/img/icons/signo-atras.png" alt="Atras">
+    </header>
+
+<!-- Contenedor del formulario -->
+    <div class="content_form">
+
     <form action="">
         <fieldset>
-            <legend>Modificar Estudiante</legend>
         <label for="nombre">Nombre:</label>
-        <input type="text" name="" id="nombre">
+        <input class="usuario" type="text" name="" id="nombre" value="Joselo" autofocus>
         <label for="apellido">Apellido:</label>
-        <input type="text" name="" id="apellido">
+        <input class="usuario" type="text" name="" value="correa" id="apellido">
+        <label for="edad">Edad:</label>
+        <input class="usuario" type="text" name="" id="edad">
         <label for="direccion">Dirección:</label>
-        <input type="text" name="" id="direccion">
-        <label for="usuario">Usuario:</label>
-        <input type="text" name="" id="usuario">
-        <label for="clave">Contraseña:</label>
-        <input type="password" name="" id="clave">
+        <input class="usuario" type="text" name="" id="direccion">
         <label for="sexo">Sexo:</label>
         <input type="radio" name="" id="sexo">Hombre
         <input type="radio" name="" id="sexo">Mujer
-        <label for="fechanac">Fecha de Nacimiento:</label>
-        <input type="date" name="" id="fechanac">
-        <label for="materia">Materia:</label>
-        <select name="" id="materia">
-            <option value="materia" selected>-Seleccione-</option>
-            <option value="lengua">Lengua Española</option>
-            <option value="mate">Matemática</option>
-            <option value="soc">Sociales</option>
-            <option value="nat">Naturales</option>
-        </select>
-        <!-- Select de curso -->
+        <br>
+        <label for="cedula">Cédula</label>
+        <input class="usuario" type="text" name="" id="cedula">
+        <label for="fechanac">Nacimiento:</label>
+        <input class="usuario" type="date" name="" id="fechanac">
+
+        <!-- Select de cursos -->
         <label for="curso">Cursos:</label>
-        <select name="" id="curso">
+        <select class="usuario" name="" id="curso">
             <option value="curso" selected>-Seleccione-</option>
             <option value="primero">Primero</option>
             <option value="segundo">Segundo</option>
@@ -43,13 +57,13 @@
             <option value="cuarto">Cuarto</option>
         </select>
         <label for="correo">Correo:</label>
-        <input type="email" name="correo" id="">
+        <input class="usuario" type="email" name="correo" id="">
         <label for="telefono">Teléfono</label>
-        <input type="tel">
-
-        <button type="button">Modificar</button>
+        <input class="usuario" type="tel" name="telefono">
+        
+    <button type="button">Modificar</button>
     </fieldset>
     </form>
-    <footer>&copy; Todos los derechos reservados a Colegio San Houston</footer>
+    </div>
 </body>
 </html>

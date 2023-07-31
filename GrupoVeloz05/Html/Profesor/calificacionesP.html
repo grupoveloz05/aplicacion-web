@@ -7,6 +7,7 @@
     <title>Calificaciones Profesor</title>
     <link rel="stylesheet" href="/css/estilos.css">
 <body id="fondo_body">
+
 <!-- Logo del colegio -->
 <div class="logo">
     <div class="logo">
@@ -17,18 +18,18 @@
        </div>
 </div>
 
-<!-- rol de Administrador -->
-<div class="header_administrador">
-    <img src="/img/Porfesor_img.png" alt="imagen de Profesor">
-    <h2>Profesor</h2>
-</div>
+<!-- Titulo de Gestión de profesor -->
+<header class="titulo_profesor_admin">
+    <h1>Gestión de Calificaciones</h1>
+    <img src="/img/icons/signo-atras.png" alt="Atras">
+</header>
 
 <div class="calificaciones">
     <h1>Calificaciones</h1> 
     <a href="profesor_inicio.html"><img src="" alt="atras"></a>
 </div>
-    
-  <div class="selectores">
+
+    <div class="selectores">
     <select name="cursos" class="selector curso">
         <option value="0">Cursos</option>
         <option value="1">Primero</option>
@@ -53,8 +54,8 @@
     
   </div> 
    <div id="materia"> Lengua española</div><!--Aqui se pondra la materia a la cual se calificara es un contenedor dinamico, si el profesor elige otra materia se pondra con js-->
-  <div class="tablas">
-    <table border="1">
+  <div class="table_content">
+    <table class="table_Profe">
         <thead>
             <th>Primer Cuatrimestre</th>
             <th>Calificaciones</th>
@@ -87,36 +88,40 @@
            
         </tbody>
     </table>
-    <table border="1">
+</div>
+
+    <div class="table_content">
+    <table class="table_Profe">
         <thead>
             <th>Segundo Cuatrimestre</th>
             <th>Calificaciones</th>
         </thead>
         <tbody>
             <tr>
-                <td>Julio</td>
+                <td>Enero</td>
                 <td><input type="number"  id="Enero" disabled value="70"></td>
             </tr>
             <tr>
-                <td>Agosto</td>
+                <td>Febrero</td>
                 <td><input type="number"  id="Febrero" disabled value="70"></td>
             </tr>
             <tr>
-                <td>Septiembre</td>
+                <td>Marzo</td>
                 <td><input type="number"  id="Marzo"  value="70" disabled></td>
             </tr>
             <tr>
-                <td>Octubre</td>
+                <td>Abril</td>
                 <td><input type="number"  id="Abril" disabled value="70"></td>
             </tr>
             <tr>
-                <td>Noviembre</td>
+                <td>Mayo</td>
                 <td><input type="number"  id="Mayo" disabled value="70"></td>
             </tr>
             <tr>
-                <td >Diciembre</td>
+                <td >junio</td>
                 <td><input type="number"  id="" disabled  value="70"> 
             </tr>
+           
         </tbody>
     </table>
 
@@ -125,5 +130,6 @@
     <button>Guardar</button>
     <button>Cancelar</button>
   </div>
+   <footer>&copy; Todos los derechos reservados a Huston</footer>
 </body>
 </html>

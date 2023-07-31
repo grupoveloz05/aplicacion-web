@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horario profesor</title>
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
-<body>
-<div class="logo"><img src="" alt=""></div>
-<div><h1>Horario</h1>  <a href="profesor_inicio.html"><img src="" alt="atras"></a></div>
+<body id="fondo_body">
+    <!-- Logo del colegio -->
+    <div class="logo">
+        <div class="logo">
+            <figure class="icono_houston">
+             <img src="/img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
+             <figcaption>Colegio de San Houston</figcaption>
+           </figure>
+           </div>
+    </div>
+
+    <!-- Titulo de Gestión de profesor -->
+    <header class="titulo_profesor_admin">
+        <h1>Horario</h1>
+        <img src="/img/icons/signo-atras.png" alt="Atras">
+    </header>
+
 <form action="">
     <select name="cursos" id="cursos-select">
         <option value="">Cursos</option>
@@ -17,7 +32,9 @@
        <option value="">Asignaturas</option>
     </select>
 </form>
-<table border="1">
+
+<div class="table_content">
+<table class="table_Profe">
 <thead>
     <th>Dias</th>
     <th>horas</th>
@@ -45,6 +62,7 @@
     </tr>
 </tbody>
 </table>
-<footer>&copy; Todos los derechos reservados a Colegio San Houston</footer>
+</div>
+ <footer>&copy; Todos los derechos reservados a Huston</footer>s
 </body>
 </html>

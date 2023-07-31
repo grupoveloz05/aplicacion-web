@@ -26,50 +26,52 @@
         <h2>Administrador</h2>
     </div>
 
-    <div class="imagen_admin">
-         <img src="/img/baner_admin.png" alt="imagen del Admin">
-    </div>
-
     <!-- Administrador items-->
     <div class="menu_admin">
         <div class="items_admin">
-            <h2><a href="profesor_admin.html">Gestionar Profesor</a></h2>
-            <p>10</p>
+            <h2><a href="profesor_admin.html">Gestionar Profesor</h2>
+            <img src="/img/img_profe.png" alt="img_profe"></a>
             <ul>
                 <li onclick="anadirP()">Añadir profesor</li>
                 <li onclick="listadoP()">Listado de profesor</li>
             </ul>
         </div>
         <div class="items_admin">
-            <h2><a href="cursosXestudiantes.html">Gestionar Estudiantes</a></h2>
-            <p>20</p>
+            <h2><a href="cursosXestudiantes.html">Gestionar Estudiantes</h2>
+            <img src="/img/img_estudent.png" alt="img_estudent"></a>
             <ul>
                 <li onclick="anadirE()">Añadir Estudiante</li>
                 <li onclick="listadoE()">Listado Estudiante</li>
             </ul>
         </div>
         <div class="items_admin">
-            <h2><a href="materias.html">Gestionar Materias</a></h2>
-            <p>12</p>
+            <h2><a href="materias.html">Gestionar Materias</h2>
+            <img src="/img/img_math.png" alt="img_profe"></a>
             <ul>
                 <li onclick="anadirM()">Añadir Materia</li>
                 <li>Listado de Materias</li>
             </ul>
         </div>
         <div class="items_admin">
-            <h2><a href="cursos.html">Gestionar Cursos</a></h2>
-            <p>10</p>
+            <h2><a href="cursos.html">Gestionar Cursos</h2>
+            <img src="/img/img_curso2.png" alt="img_profe"></a>
             <ul>
                 <li onclick="anadirC()">Añadir Curso</li>
                 <li>Listado de Cursos</li>
             </ul>
         </div>
         <div class="items_admin">
-            <h2><a href="usuarios.html">Gestionar Usuario</a></h2>
-            <p>8</p>
+            <h2><a href="usuarios.html">Gestionar Usuario</h2>
+            <img class="user_img" src="/img/imagenusuarios.jpg" alt="img_profe"></a>
            <ul>
-               <li onclick="anadirU()">Tipo de Usuario</li>
-               <li>Listado de Usuarios</li>
+               <li>
+                <select class="users_add" name="" id="curso">
+                    <option value="curso" selected disabled>Añadir Usuario</option>
+                    <option onclick="anadirA()" value="admin">Administrador</option>
+                    <option value="profe">Profesor</option>
+                    <option value="estud">Estudiante</option>
+                </select></li><br>
+               <li onclick="listadoU()">Listado de Usuarios</li>
            </ul>
         </div>
     </div>
@@ -105,7 +107,24 @@
          function listadoP() {
             window.location = "listado_profesor.html";
          }
+
+        //  Añadir Usuario
+
+         function anadirA() {
+            window.location = "anadir_admin.html";
+         }
+
+         function anadirP() {
+            window.location = "anadir_profesor.html";
+         }
+
+         function anadirE() {
+            window.location = "anadir_estudiante.html";
+         }
+
+         function listadoU() {
+            window.location = "listado_usuario.html"
+         }
     </script>
-    <footer>&copy; Todos los derechos reservados a Colegio San Houston</footer>
 </body>
 </html>

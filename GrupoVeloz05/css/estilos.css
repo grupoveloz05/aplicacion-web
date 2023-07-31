@@ -20,13 +20,13 @@
 
 #fondo_login {
     background: linear-gradient(180deg, #0792B6 0%, #09109C 100%);
-    height: 100vh;
+    height: 110vh;
 }
 
 .formulario {
     border-radius: 30px 30px 30px 30px;
-    border: 1px solid #000;
-    background: #292C33;
+    border: 1px solid #fff;
+    background: #0a1736;
     box-shadow: 0px -10px 4px 2px rgba(0, 0, 0, 0.35);
     margin: 0 auto;
     position: relative;
@@ -61,7 +61,7 @@
     color: var(--blanco);
     padding: 5px;
     margin: 20px;
-    width: 380px;
+    width: 370px;
 }
 
 .usuario::placeholder {
@@ -76,8 +76,8 @@
 }
 
 .btn-entrar {
-    border: 1px solid #000;
-    background: #699BF7;
+    border: 1px solid #fff;
+    background: green;
     height: 50px;
     font-weight: bold;
     padding: 10px;
@@ -141,22 +141,33 @@ footer {
     justify-content: center;
 }
 
+.menu_estudent {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedores */
+
 .items_admin {
     align-items: center;
     border-radius: 30px;
     border: solid 2px var(--blanco);
-    background: #1760E5;
+    background: #00000025;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    /* display: grid; */
     padding: 10px;
-    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     transition: 0.6s;
     overflow: hidden;
     margin: 10px;
-    gap: 10px;
-    flex-shrink: 0;
+    height: auto;
     width: 236px;
+}
+
+.items_admin img {
+    height:185px; 
+    width: 200px;
 }
 
 .items_admin p {
@@ -168,13 +179,18 @@ footer {
 .items_admin:hover {
     background-color: #0792B6;
     box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 .items_admin h2 a {
     color: var(--blanco);
     text-decoration: none;
-    text-shadow: 2px 2px 2px #292C33;
+    text-shadow: 2px 2px 2px #08052c;
 }
+
+.items_admin h2 a:hover {
+    color: #0cd1b0;
+} 
 
 .items_admin ul li {
     align-items: center;
@@ -192,6 +208,20 @@ footer {
     color: #000;
 }
 
+.users_add {
+    border: 0;
+    background-color: #172742;
+    color: var(--blanco);
+    font-size: 20px;
+    text-align: center;
+}
+
+.users_add option {
+    padding: 10px;
+}
+
+/* Final de contenedor items */
+
 .imagen_admin  {
     bottom: 80px;
     display: flex;
@@ -202,8 +232,8 @@ footer {
 }
 
 .imagen_admin img {
-    width: 450px;
-    height: 300px;
+    width: 350px;
+    height: 220px;
     object-fit: cover;
 }
 
@@ -234,12 +264,97 @@ footer {
     text-align: center;
 }
 
+/* Profesor admin */
+.img_add {
+    bottom: 45px;
+    display: flex;
+    position: relative; 
+    left: 1105px;   
+}
+
+.img_add_math {
+    bottom: 45px;
+    display: flex;
+    position: relative; 
+    left: 380px;
+}
+
+.img_add_plus {
+    bottom: 45px;
+    display: flex;
+    position: relative; 
+    left: 380px;
+}
+
+.titulo_profesor_admin {
+    align-items: center;
+    background-color: #0A0E20;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.titulo_profesor_admin img {
+    position: relative;
+    right: 230px;
+}
+
+.titulo_profesor_admin h1 {
+    position: relative;
+    right: 230px;
+}
+
+/* Tablas */
+.table_content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    top: 80px;
+}
+
+.table_Profe {
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--blanco);
+}
+
+.table_materia {
+    width: 350px;
+}
+
+th {
+    color: var(--blanco);
+    text-align: center;
+    text-shadow: 3px 3px 3px #292C33;
+    padding: 5px;
+}
+
+td {
+    background-color: var(--blanco);
+    font-family: roboto;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+}
+
+.edit_delet {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Final de tablas */
+
+.titulo_profesor_admin {
+    color: var(--blanco);
+}
+
 /* Final de administrador */
 
 /* Estudiante */
 
 .direc_curs {
     align-items: center;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     background-color: #0A0E20;
@@ -273,6 +388,85 @@ footer {
 
 /* Final de estudiante */
 
+/* Formularios */
+
+.content_form {
+    padding-bottom: 30px;
+}
+
+form {
+    background-color: #0a1736;
+    border: 1px solid var(--blanco);
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    transition: 0.5s;
+  }
+
+  form:hover {
+    box-shadow: 3px ;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    border: 1px solid var(--blanco);
+  }
+  form button {
+    color: var(--blanco);
+    cursor: pointer;
+    background: green;
+    border: solid 1px var(--blanco);
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 1em;
+  }
+
+  form button:hover {
+    background-color: rgba(0, 128, 0, 0.836);
+  }
+
+  fieldset {
+    color: var(--blanco);
+    transition: 0.3s;
+  }
+
+  fieldset:hover {
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  label {
+    color: var(--blanco);
+    padding: 0.5em 1.5em 0.5em 0;
+    font-size: 17px;
+  }
+
+  .content_usuAna {
+    margin: 0 auto;
+    width: 430px;
+  }
+
+  .usuAna {
+    width: 150px;
+  }
+
+  input:focus {
+    outline: 1px solid var(--blanco);
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    background-color: var(--blanco);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+
+  ::-webkit-calendar-picker-indicator:active {
+    background-color: #1760E5;
+  }
+
 /* Media query del login */
 
 @media screen and (max-width: 560px) {
@@ -294,6 +488,10 @@ footer {
     .formulario {
         width: 100%;
     }
+
+    fieldset {
+        border: 0;
+      }
 
     /* Media query de los items */
 

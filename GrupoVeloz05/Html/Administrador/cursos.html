@@ -5,38 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos</title>
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
-<body>
-    <header>
-        <h1>Cursos</h1>
+<body id="fondo_body">
+
+     <!-- Logo del colegio -->
+     <div class="logo">
+        <div class="logo">
+            <figure class="icono_houston">
+             <img src="/img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
+             <figcaption>Colegio de San Houston</figcaption>
+           </figure>
+           </div>
+    </div>
+
+    <!-- Titulo de Gestión de Materia -->
+    <header class="titulo_profesor_admin">
+        <h1>Gestión de Cursos</h1>
+        <img src="/img/icons/signo-atras.png" alt="Atras">
     </header>
 
-    <table class="contenedor_cursos">
+    <div class="table_content">
+    <table class="table_Profe table_materia">
         <tr>
             <th>Nombre Curso</th>
             <th>Acciones</th>
         </tr>
         <tr>
             <td>Primero</td>
-            <td><a href="modificar_curso.html">Modificar</a> | Eliminar</td>
+            <td class="edit_delet"><a href="modificar_curso.html"><img src="/img/icons/editar-img.png" width="30px" height="30px" alt="editar"></a><img src="/img/icons/trash.png" width="30" height="30" alt="trash"></td>
         </tr>
         <tr>
             <td>Segundo</td>
-            <td><a href="modificar_curso.html">Modificar</a> | Eliminar</td>
+            <td class="edit_delet"><a href="modificar_curso.html"><img src="/img/icons/editar-img.png" width="30px" height="30px" alt="editar"></a><img src="/img/icons/trash.png" width="30" height="30" alt="trash"></td>
         </tr>
         <tr>
             <td>Tercero</td>
-            <td><a href="modificar_curso.html">Modificar</a> | Eliminar</td>
+            <td class="edit_delet"><a href="modificar_curso.html"><img src="/img/icons/editar-img.png" width="30px" height="30px" alt="editar"></a><img src="/img/icons/trash.png" width="30" height="30" alt="trash"></td>
         </tr>
         <tr>
             <td>Cuarto</td>
-            <td><a href="modificar_curso.html">Modificar</a> | Eliminar</td>
+            <td class="edit_delet"><a href="modificar_curso.html"><img src="/img/icons/editar-img.png" width="30px" height="30px" alt="editar"></a><img src="/img/icons/trash.png" width="30" height="30" alt="trash"></td>
         </tr>
         <tr>
             <td>Quinto</td>
-            <td><a href="modificar_curso.html">Modificar</a> | Eliminar</td>
+            <td class="edit_delet"><a href="modificar_curso.html"><img src="/img/icons/editar-img.png" width="30px" height="30px" alt="editar"></a><img src="/img/icons/trash.png" width="30" height="30" alt="trash"></td>
         </tr>
-        <button type="submit"><a href="anadir_curso.html">Anadir</a></button>
+        <div class="img_add_plus">
+            <a href="/Html/Administrador/anadir_curso.html"><img src="/img/icons/anadirMas-img.png" alt="Anadir Curso"></a>
+         </div>
     </table>
+    </div>
 </body>
 </html>

@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="/css/estilos.css">
+    <script src="/js/app.js"></script>
   </head>
   <body id="fondo_login">
     <div class="content_login">
+      <!-- Logo de colegio San Houston -->
     <div class="logo">
      <figure>
       <img src="img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
@@ -23,17 +25,18 @@
       </div>
       <form action="">
         <div class="formulariouser">
-          <input class="usuario" type="text" name="" placeholder="Usuario o correo escolar" />
-          <input class="usuario" type="password" placeholder="Contraseña" required />
+          <input class="usuario" type="text" id="user" placeholder="Usuario o correo escolar" />
+          <input class="usuario" type="password" id="clave" placeholder="Contraseña" required />
         </div>
 
         <!-- Botón del login -->
         <div class="btn-login">
-        <button class="btn-entrar" type="submit">Entrar</button>
+        <button class="btn-entrar" type="submit" onclick="ingresar()">Entrar</button>
         </div>
       </form>
       
-      <div class="recovery"><a>Has olvidado la Contraseña?</a></div> 
+      <div class="recovery"><a href="#">Has olvidado la Contraseña?</a></div>
+      
     </div>
     </div>
     <div class="rol">
