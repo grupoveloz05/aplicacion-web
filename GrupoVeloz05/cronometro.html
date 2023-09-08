@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+    <body id="fondo_login">
+        <div class="content_login">
+            <!-- Logo de colegio San Houston -->
+            <div class="logo_leon">
+                <figure>
+                    <img src="img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
+                    <figcaption>Colegio de San Houston</figcaption>
+                </figure>
+            </div>
+            <div class="formulario">
+                <!-- Icono y titulo de inicio de sesion y ayuda -->
+                <h1 class="titulo_sesion">Verificacion de codigo</h1>
+                <p class="msg3">Usted tiene hasta las 9:30 para introducir el codigo.</p>
+                <div class="iconos">
+                    <img class="icon-user2" src="img/icons/signo-user.png" alt="icono user" />
+                </div>
+
+                <!-- Formulario user -->
+                <form class="form_login" action="">
+                    <div class="formulariouser">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="grupo_input">
+                            <input class="usuario usuAna" type="password" id="user" placeholder="Codigo de verificacion" autofocus maxlength="6" required/>
+                        </div>
+                    </div>
+                    <!-- Botón del login -->
+                    <div class="btn-login">
+                        <button class="btn-entrar" type="submit" onclick="ingresar()"><a href="clave.html">Confirmar</a></button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="rol">
+            <a href="/Html/Estudiante/estudiante.html">Estudiante</a>
+        </div>
+        <div class="rol">
+            <a href="/Html/Profesor/profesor_inicio.html">Profesor</a>
+        </div>
+        <div class="rol">
+            <a href="/Html/Administrador/administrador.html">Administrador</a>
+        </div>        
+        <footer>&copy; Todos los derechos reservados a Colegio San Houston</footer>
+    </html>
+
+</body>
+</html>
