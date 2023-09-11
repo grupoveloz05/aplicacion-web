@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+    <body id="fondo_login">
+        <!-- Logo de colegio San Houston -->
+    <div class="logo_leon">
+        <figure>
+         <img src="img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
+         <figcaption>Colegio de San Houston</figcaption>
+       </figure>
+       </div>
+        <!-- Contenedor del formulario -->
+   <div class="content_form">
+    <main class="formulario_login">
+        <h1 class="titulo_pic">Verificación de código</h1>
+        <p>El codigo expira en 01:50 </p>
+        <div class="iconos">
+          <img class="icon-user" src="img/icons/signo-user.png" alt="icono user" />
+        </div>
+        <form class="fondo_login2" method="post" action="#" enctype="multipart/form-data">
+          <div>
+            <input type="file" name="foto" id="foto" accept="image/*" title="Agregar Foto"/>
+          </div>
+          <div>
+            <!-- <label for="nombre">Usuario:</label> -->
+            <input class="mainLoginInput" type="text" name="codigo" autocomplete="off" autofocus placeholder="# Introducir Código"/>
+          </div>
+          
+          <div id="boton_add">
+            <button class="btn-entrar" type="submit" onclick="ingresar()"><a href="clave.html">Confirmar</a></button>
+        </div>
+        </form>
+    </main>
+  </div>
+        <footer>&copy; Todos los derechos reservados a Colegio San Houston</footer>
+    </html>
+<script src="/js/app.js"></script>
+</body>
+</html>
