@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body id="fondo_body">
+
+    <!-- Logo del colegio -->
+    <div class="logo">
+        <div class="logo">
+            <figure class="icono_houston">
+             <img src="/img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
+             <figcaption>Colegio de San Houston</figcaption>
+             <div class="header_administrador header_perfil">
+                 <nav>
+                     <ul class="menu-horizontal">
+                         <li>
+                             <a href="#"><img src="/img/Porfesor_img.png" alt="imagen de admin" title="Perfil"></a>
+                             <ul class="menu-vertical">
+                                 <li><a href="/Html/Administrador/perfil_admin.html">Perfil</a></li>
+                                 <li><a href="/index.html">CerrarSesion</a></li>
+                             </ul>
+                         </li>
+
+                     </ul>
+                 </nav>
+                 <div class="perfil_rol">
+                     <h2 class="perefil">Joselo</h2>
+                     <h2 class="profile">Administrador</h2>
+                 </div>
+             </div>
+           </figure>
+           </div>
+    </div>
+
+    <!-- Titulo de Gestión de Usuarios -->
+    <header class="titulo_profesor_admin">
+        <h1>Gestión de Usuarios</h1>
+        <a href="/Html/Administrador/administrador.html"><img src="/img/icons/signo-atras.png" alt="Atras"></a>
+    </header>
+
+    <section class="menu_admin">
+        <div class="items_admin">
+            <h2><a href="usuario_profesor.html">Profesor</a></h2>
+                <ul>
+                    <li class="numer" onclick="anadirP()"><img src="/img/icons/addUser.png" alt="agregar" title="Agregar"></li><br>
+                    <!-- <li onclick="listadoP()"><img src="/img/icons/listadoU.png" alt="Listado" title="listado"></li> -->
+                </ul>
+        </div>
+        <div class="items_admin">
+            <h2><a href="usuario_estudiante.html">Estudiantes</a></h2>
+                <ul>
+                    <li class="numer" onclick="anadirE()"><img src="/img/icons/addUser.png" alt="agregar" title="Agregar"></li><br>
+                    <!-- <li onclick="listadoE()"><img src="/img/icons/listadoU.png" alt="Listado" title="listado"></li> -->
+                </ul>
+        </div>
+        <div class="items_admin">
+            <h2><a href="usuario_admin.html">Administrador</a></h2>
+            <ul>
+                <li  onclick="anadirA()"><img src="/img/icons/addUser.png" alt="agregar" title="Agregar"></li><br>
+                <li onclick="listadoA()"><img src="/img/icons/listadoU.png" alt="Listado" title="listado"></li>
+            </ul>
+        </div>
+    </section>
+</body>
+<script>
+    function anadirA() {
+        window.location = 'formulario_admin.html';
+    }
+    function listadoA() {
+    window.location = 'admin_table.html';
+    }
+
+    function anadirP() {
+    window.location = "anadir_usuario_profesor.html";
+    }
+
+    function anadirE() {
+    window.location = "anadir_usuario_estudiante.html";
+    }
+
+    
+</script>
+</html>

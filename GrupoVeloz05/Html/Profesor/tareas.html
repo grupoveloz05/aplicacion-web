@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas por Curso</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body id="fondo_body">
+
+    <!-- Logo del colegio -->
+    <div class="logo">
+        <div class="logo">
+            <figure class="icono_houston">
+                <img src="/img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
+                <figcaption>Colegio de San Houston</figcaption>
+                <div class="header_administrador header_perfil">
+                    <nav>
+                        <ul class="menu-horizontal">
+                            <li>
+                                <a href="#"><img src="/img/Porfesor2_img.png" alt="imagen de admin" title="Perfil"></a>
+                                <ul class="menu-vertical verticale verticale3">
+                                    <li><a href="/Html/Profesor/perfil_profesor.html">Perfil</a></li>
+                                    <li><a href="/index.html">Cerrar Sesion</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="perfil_rol">
+                        <h2 class="perefil">Juancito</h2>
+                        <h2 class="profile">Profesor</h2>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </div>
+
+    <!-- Titulo de materia -->
+    <header class="titulo_profesor_admin">
+        <h1>Gestión de Tareas por Curso</h1>
+        <a href="/Html/Profesor/profesor_inicio.html"><img src="/img/icons/signo-atras.png" alt="Atras"></a>
+    </header>
+
+    <!-- Formulario de tareas -->
+
+    <form action="procesar_tareas.php" method="post" enctype="multipart/form-data">
+        <h2>Envío de Tareas</h2>
+        
+        <!-- Seleccionar el curso -->
+        <label for="curso">Seleccione el curso:</label>
+        <select class="usuario usuAna derec" id="curso" name="curso">
+            <option value="lengua">Seleccione:</option>
+            <option value="firts">Primero</option>
+            <option value="second">Segundo</option>
+            <!-- Agregar más opciones de curso aquí -->
+        </select>
+
+        <!-- Seleccionar el curso -->
+        <label for="materia">Materia:</label>
+        <select class="usuario usuAna derec" id="curso" name="curso">
+            <option value="lengua">Seleccione:</option>
+            <option value="lengua">Lengua Española</option>
+            <option value="matematicas">Matemáticas</option>
+            <!-- Agregar más opciones de curso aquí -->
+        </select>
+
+        <!-- Ingresar tareas -->
+        <label for="tareas_estudiante">Fecha limite:</label>
+        <input class="usuario usuAna derec" type="date" id="tareas_estudiante" name="tareas_estudiante">
+
+        <!-- Adjuntar PDF -->
+        <h2>Adjuntar PDF</h2>
+        <input class="usuario" type="file" id="archivo_pdf" name="archivo_pdf">
+
+        <button type="submit">Enviar Tareas y PDF</button>
+    </form>
+
+    <h2>Tareas Recibidas de Estudiantes</h2>
+
+    <!-- Lista de tareas organizadas por curso -->
+    <h3>Lengua Española</h3>
+    <ul>
+        <li><a href="tarea_estudiante1_lengua.pdf" target="_blank">Tarea de Estudiante 1</a></li>
+        <li><a href="tarea_estudiante2_lengua.pdf" target="_blank">Tarea de Estudiante 2</a></li>
+        <!-- Agregar más tareas recibidas para Lengua Española aquí -->
+    </ul>
+
+    <h3>Matemáticas</h3>
+    <ul>
+        <li><a href="tarea_estudiante1_matematicas.pdf" target="_blank">Tarea de Estudiante 1</a></li>
+        <li><a href="tarea_estudiante2_matematicas.pdf" target="_blank">Tarea de Estudiante 2</a></li>
+        <!-- Agregar más tareas recibidas para Matemáticas aquí -->
+    </ul>
+</body>
+</html>

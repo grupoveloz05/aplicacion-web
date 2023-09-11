@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesor por materia</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body id="fondo_body">
+
+    <!-- Logo del colegio -->
+    <div class="logo">
+        <div class="logo">
+            <figure class="icono_houston">
+             <img src="/img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
+             <figcaption>Colegio de San Houston</figcaption>
+             <div class="header_administrador header_perfil">
+                 <nav>
+                     <ul class="menu-horizontal">
+                         <li>
+                             <a href="#"><img src="/img/Porfesor2_img.png" alt="imagen de admin" title="Perfil"></a>
+                             <ul class="menu-vertical verticale verticale3">
+                                 <li><a href="/Html/Profesor/perfil_profesor.html">Perfil</a></li>
+                                 <li><a href="/index.html">Cerrar Sesion</a></li>
+                             </ul>
+                         </li>
+                     </ul>
+                 </nav>
+                 <div class="perfil_rol">
+                     <h2 class="perefil">Juancito</h2>
+                     <h2 class="profile">Profesor</h2>
+                 </div>
+             </div>
+           </figure>
+           </div>
+    </div>
+
+    <!-- Titulo de Curso -->
+    <header class="titulo_profesor_admin">
+        <h1>Programa de Clases</h1>
+        <a href="/Html/Profesor/profesor_inicio.html"><img src="/img/icons/signo-atras.png" alt="Atras"></a>
+    </header>
+
+    <!-- Cursos por estudiantes -->
+    <section class="menu_admin menu_estudent">
+        
+        <div onclick="program()" class="items_admin">
+            <h2><a href="#">L. Española</h2>
+            <img src="/img/lenguaEspanola.png" alt="img estudiantes"></a>
+            <ul>
+                <!-- <li class="numer" onclick="program()"><img src="/img/program_class.jpg" alt="programa de clases" title="programa de clases"></li> -->
+                <!-- <li onclick="activity()"><img src="/img/activity.png" alt="Actividades" title="Activitys"></li> -->
+            </ul>
+        </div>
+        <div onclick="program2()" class="items_admin">
+            <h2><a href="#.html">Matemática</h2>
+            <img src="/img/matematica.png" alt="img estudiantes"></a>
+            <ul>
+                <!-- <li class="numer" onclick="program()"><img src="/img/program_class.jpg" alt="programa de clases" title="programa de clases"></li> -->
+                <!-- <li onclick="activity()"><img src="/img/activity.png" alt="Actividades" title="Activitys"></li> -->
+            </ul>
+        </div>
+    </section>
+    <footer>&copy; Todos los derechos reservados a Houston</footer>
+</body>
+    <script>
+        function program() {
+            window.location = 'claseEspanol_profesor.html';
+        }
+        function program2() {
+        window.location = 'claseMatematica_profesor.html';
+        }
+    </script>
+</html>
