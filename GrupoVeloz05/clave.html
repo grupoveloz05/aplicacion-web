@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clave</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+ <body id="fondo_login">
+     <!-- Logo de colegio San Houston -->
+  <div class="logo_leon">
+    <figure>
+     <img src="img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
+     <figcaption>Colegio de San Houston</figcaption>
+   </figure>
+   </div>
+   <!-- Contenedor del formulario -->
+   <div class="content_form">
+    <main class="formulario_login">
+        <h1 class="titulo_pic">Nueva Contraseña</h1>
+        <div class="iconos">
+          <img class="icon-user" src="img/icons/signo-user.png" alt="icono user" />
+        </div>
+        <form class="fondo_login2" method="post" action="#" enctype="multipart/form-data">
+          <div>
+            <input type="file" name="foto" id="foto" accept="image/*" title="Agregar Foto"/>
+          </div>
+          <div>
+            <!-- <label for="nombre">Usuario:</label> -->
+            <input class="mainLoginInput" type="text" name="nombre" autocomplete="off" autofocus placeholder="&#61475; Introduzca Contraseña"/>
+          </div>
+          <div>
+            <!-- <label for="apellido">Contraseña:</label> -->
+            <input class="mainLoginInput" type="password" name="apellido" autocomplete="off" placeholder="&#61475; Repita Contraseña"/>
+          </div>
+          
+          <div id="boton_add">
+            <button class="btn-entrar" type="submit" onclick="entry()"><a href="login.html">Entrar</a></button>
+        </div>
+          <div class="forg_pass"><a href="login.html">Volver Inicio Sesion</a></div>
+        </form>
+    </main>
+  </div>
+     <footer>&copy; Todos los derechos reservados a Colegio San Houston</footer>
+     <script>
+        function entry() {
+            window.location = '/login.html';
+        }
+     </script>
+ </body>
+</html>
