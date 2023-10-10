@@ -21,15 +21,21 @@
 
 #fondo_login {
     background: linear-gradient(180deg, rgb(7, 147, 182) 0%, #09109C 100%);
-    height: 105vh;
+    height: 96.4vh;
 }
 
 .formulario_login {
     border-radius: 20px;
-    height: 360px;
-    width: 180px;
-    overflow: visible;
     border: 1px solid var(--blanco);
+    height: 360px;
+    overflow: visible;
+    width: 180px;
+}
+
+.form_register div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .formulario_login p {
@@ -42,6 +48,15 @@ main .forg_pass a{
     color: var(--blanco);
     text-align: center;
     text-decoration: none;
+}
+
+.img_back {
+    position: absolute;
+}
+
+.img_back img {
+    position: relative;
+    right: 95px;
 }
 
 .formulario {
@@ -87,8 +102,6 @@ main .forg_pass a{
 
 .usuario::placeholder {
     color: #ffffff5e;
-    position: relative;
-    left: 15px;
 }
 
 .btn-login {
@@ -157,9 +170,15 @@ footer {
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     text-align: center;
     padding: 5px;
+    position: relative;
+    top: 190px;
+}
+
+.footer_index {
+    position: static;
 }
 
 /* Final de usuario */
@@ -189,8 +208,8 @@ footer {
 
 .items_admin {
     align-items: center;
-    border-radius: 20px;
-    border: solid 2px var(--blanco);
+    border-radius: 10px;
+    border: solid 1px var(--blanco);
     background: #00000025;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 10px;
@@ -369,7 +388,7 @@ footer {
 }
 
 .titulo_profesor_admin img {
-   padding: 10px;
+   padding: 5px;
 }
 
 .titulo_profesor_admin h1 {
@@ -420,11 +439,11 @@ th {
 td {
     border: 1px solid #ddd;
     background-color: var(--blanco);
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 13px;
     text-align: center;
     padding: 2.2px;
-    font-family: sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .th_padding {
@@ -614,8 +633,7 @@ form {
   
   label {
     color: var(--blanco);
-    padding: 0.5em 1.5em 0.5em 0;
-    font-size: 19.5px;
+    /* padding: 0.5em 1.5em 0.5em 0; */
     font-family: Arial, Helvetica, sans-serif;
   }
 
@@ -655,7 +673,6 @@ form {
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 10px;
   }
 
   ::-webkit-calendar-picker-indicator {
@@ -678,14 +695,14 @@ form {
 }
 
 main{
-    width: 30%;
+    width: 25%;
     margin: auto;
     padding: 1em 8vw;
     background: #0a1736;
     box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
     overflow: scroll;
     margin-top: 23px;
-    height: 600px;
+    height: 355px;
   }
 
   main::-webkit-scrollbar {
@@ -713,7 +730,7 @@ main{
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 10px;
   }
   
   form img{
@@ -742,8 +759,18 @@ main{
   
   form input{
     padding: 8px 20px;
-    border: 1px solid #1F5F74;
-    border-radius: 3px;
+    border-radius: 6px;
+    outline: none;
+    
+  }
+
+  .efect_input {
+      transition: 0.3s;
+  }
+
+  .efect_input:hover {
+      box-shadow: 1px 1px 1px gray;
+      background-color: #1F5F74;
   }
   
   form button{
@@ -752,10 +779,10 @@ main{
     background: #1F5F74;
     color: white;
     border-radius: 3px;
-    font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
-    height: 45px;
+    height: 42px;
+    width: 115px
   }
 
   .input_sex {
@@ -769,24 +796,19 @@ main{
 
   .input_sex input {
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   .selects {
     align-items: center;
-    align-content: center;
     display: flex;
     justify-content: center;
     flex-direction: row;
   }
 
-  .selects div .labelmat {
-    position: relative;
-    left: 27px;
-  }
-
   .add_foto {
     background-color: #1F5F74;
+    font-size: 16px;
   }
 
   /* final formulario avanzado */
@@ -799,12 +821,16 @@ main{
   }
 
   .mainLoginInput::-webkit-input-placeholder {
-      font-family: FontAwesome;
+      font-family: FontAwesome,Arial, Helvetica, sans-serif;
       font-weight: normal;
       overflow: visible;
       vertical-align: top;
       display: inline-block !important;
       color: black;
+  }
+
+  .usuAna::-webkit-input-placeholder {
+    color: var(--blanco);
   }
 
   .mainLoginInput::-moz-placeholder {
@@ -902,6 +928,8 @@ main{
 
     .perfil_js img {
         border-radius: 50%;
+        width: 100px;
+        height: 100px;
     }
 
     /* css de perfil enlaces */
@@ -1027,8 +1055,8 @@ main{
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       position: relative;
       font-size: 16px;
-      top: 25px;
-      left: 25px;
+      top: 30px;
+      left: 7px;
   }
 
   .dark {
@@ -1073,6 +1101,137 @@ main{
     
   }
   /* Final de tareas */
+
+  /* Pagina principal */
+
+  .header_principal {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_principal nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.header_principal nav li a {
+    color: var(--blanco);
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header_principal nav li a:hover {
+    color: #08a3b7;
+    text-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.baner_principal {
+    border-bottom: 1px solid var(--blanco);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.baner_principal p {
+    color: var(--blanco);
+    text-align: justify;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+}
+
+.baner_principal .contactos {
+    background-color: #172742;
+    display: flex;
+    flex-direction: column;
+}
+
+.baner_principal .contactos form{
+    background-color: #172742;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 150px;
+}
+
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    background: #172742;
+}
+
+
+
+.main_principal h1 {
+    color: var(--blanco);
+    text-align: center;
+    font-family: cursive;
+    font-size: 23px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+article {
+    border-radius: 20px;
+    color: var(--blanco);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transition: 0.3s;
+    padding: 10px;
+    margin: 15px;
+    font-weight: bold;
+    width: 320px;
+}
+
+article:hover {
+    /* background-color: #08052c; */
+}
+.articulo {
+    border-bottom: 1px solid var(--blanco);
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.articulo2 {
+    background-color: #08a3b7;
+    border-top: 1px solid var(--blanco);
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+}
+.articulo3 {
+    border-bottom: 1px solid var(--blanco);
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+article h2 {
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article p {
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+.ncolegio {
+    border-bottom: solid 1px var(--blanco);
+}
+
+.contactos {
+    background-color: #0a1736;
+
+}
+
+/* Final de pagina principal */
 
 /* Media query del login */
 
@@ -1141,6 +1300,11 @@ main{
        display: flex;
        justify-content: center;
        flex-direction: column;
+       /* position: absolute; */
+    }
+
+    .header_perfil {
+        
     }
 
     .perfil_rol {
