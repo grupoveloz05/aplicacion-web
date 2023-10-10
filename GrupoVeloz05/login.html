@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <script src="https://fontawesome.com/icons/user?f=classic&s=solid"></script>
+  </head>
+  <body id="fondo_login">
+    <div class="content_login">
+
+      <!-- Logo de colegio San Houston -->
+    <div class="logo_leon">
+     <figure>
+      <img src="img/imagenlogo 1.png" alt="icono de colegio" width="70px" />
+      <figcaption>Colegio de San Houston</figcaption>
+    </figure>
+    </div>
+    <!-- Contenedor del formulario -->
+    <div class="content_form">
+      <main class="formulario_login">
+          <h1 class="titulo_pic">Iniciar Sesión</h1>
+          <div class="iconos">
+            <img class="icon-user" src="img/icons/signo-user.png" alt="icono user" />
+          </div>
+          <form class="fondo_login2" method="post" action="#" enctype="multipart/form-data">
+            <br>
+            <div>
+              <!-- <label for="nombre">Usuario:</label> -->
+              <input class="mainLoginInput" type="text" name="nombre" autocomplete="off" autofocus placeholder="&#61447; Usuario"/>
+            </div>
+            <div>
+              <!-- <label for="apellido">Contraseña:</label> -->
+              <input class="mainLoginInput" type="password" name="apellido" autocomplete="off" placeholder="&#61475; Contraseña"/>
+            </div>
+            
+            <div id="boton_add">
+              <button type="button">Entrar</button>
+          </div>
+          <div class="forg_pass"><a href="recuperar-contrasena.html">¿Olvidaste la Contraseña?</a></div>
+          <div class="forg_pass"><a href="index.html">Volver a la página</a></div>
+          </form>
+      </main>
+  </div>
+    </div>
+    <div class="rol">
+      <a href="/Html/Estudiante/estudiante.html">Estudiante</a>
+    </div>
+    <div class="rol">
+      <a href="/Html/Profesor/profesor_inicio.html">Profesor</a>
+    </div>
+    <div class="rol">
+      <a href="/Html/Administrador/administrador.html">Administrador</a>
+    </div>
+    <footer class="footer_index">&copy; Todos los derechos reservados a Colegio San Houston</footer>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
