@@ -2,9 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario del profesor (Admin)</title>
+    <title>Lista de Administrador</title>
     <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body id="fondo_body">
@@ -37,23 +36,35 @@
            </div>
     </div>
 
-    <!-- Titulo de Formulario Profesor -->
+    <!-- Titulo de Gestión de profesor -->
     <header class="titulo_profesor_admin">
-        <h1>Añadir Usuario Profesor</h1>
-        <a href="/Html/Administrador/usuario_profesor.html"><img src="/img/icons/signo-atras.png" alt="Atras"></a>
+        <h1>Listado de Administradores</h1>
+        <a href="/Html/Administrador/administrador.html"><img src="/img/icons/signo-atras.png" alt="Atras"></a>
     </header>
 
-    <!-- Añadir usuario -->
-    <div class="content_form content_usuAna">
-    <form action="">
-        <fieldset class="ana_modi">
-        <label for="usuario">Usuario:</label>
-        <input class="usuario usuAna mainLoginInput" type="text" name="" id="usuario" placeholder="&#61447;" autofocus>
-        <label for="clave">Contraseña:</label>
-        <input class="usuario usuAna mainLoginInput" type="password" name="" id="clave" placeholder="&#61475;">
-        <button type="submit">Añadir</button>
-    </fieldset>
-    </form>
-    </div>
+    <div class="table_content">
+    <table class="table_Profe table_materia">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Martinez</td>
+            <td>30 años</td>
+        </tr>
+        <tr>
+            <td>Yina</td>
+            <td>Guzman</td>
+            <td>25 años</td>
+        </tr>
+        <tr>
+            <td>Pablo</td>
+            <td>Rodrigez</td>
+            <td>20 años</td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>

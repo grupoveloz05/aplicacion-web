@@ -40,7 +40,7 @@
     <!-- Titulo de Formulario Profesor -->
     <header class="titulo_profesor_admin">
         <h1>Añadir Materia</h1>
-        <a href="/Html/Administrador/materias.html"><img src="/img/icons/signo-atras.png" alt="Atras"></a>
+        <a href="/Html/Administrador/administrador.html"><img src="/img/icons/signo-atras.png" alt="Atras"></a>
     </header>
 
     
@@ -49,12 +49,15 @@
         <form action="">
             <fieldset class="ana_modi">
             <label for="materia">Materia:</label>
-            <input class="usuario usuAna" type="text" placeholder="Ejem: Español" autofocus>
-            
-            <button type="button">Añadir</button>
+            <input class="usuario usuAna" type="text" placeholder="Ejem: Español" autofocus>  
+            <button onclick="agregar()" type="button">Añadir</button>
             </fieldset>
-    
         </form>
        </div>
 </body>
+<script>
+    function agregar() {
+        alert("Se agrego correctamente!") 
+    }
+</script>
 </html>
